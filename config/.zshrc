@@ -31,6 +31,7 @@ zstyle ':vcs_info:git*' formats ' %s(%F{magenta}%b%f)'
 autoload -U colors && colors
 setopt prompt_subst
 PS1='%F{yellow}%n@%m%f %F{cyan}%~%f${vcs_info_msg_0_} -> '
+# PS1='%F{yellow}%f %F{cyan}%~%f${vcs_info_msg_0_}  '
 
 # Autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -46,3 +47,5 @@ path+=$HOME/.local/bin
 path+=$HOME/nvim-linux64/bin
 
 export SAM_CLI_TELEMETRY=0
+
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
