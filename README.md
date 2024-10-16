@@ -12,7 +12,8 @@ My personal settings for common Linux tools.
 ## Requirements
 
 - Git
-- [Exa](https://github.com/ogham/exa)
+- [Exa](https://github.com/ogham/exa)/[Eza](https://github.com/eza-community/eza)
+- [FZF](https://github.com/junegunn/fzf)
 - [Neovim](https://github.com/neovim/neovim) >= 0.9.5
 - A [NerdFont](https://www.nerdfonts.com/) to display icons
 - [Tmux](https://github.com/tmux/tmux/wiki)
