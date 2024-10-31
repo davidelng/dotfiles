@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+if ! command -v stow >/dev/null 2>&1; then
+    echo "Stow is not installed"
+    exit
+fi
+
+declare -a stowdirs=("sh" "nvim" "tmux")
+for package in "${stowdirs[@]}"; do
+    if [ -d $package ]; then
+        echo "stow $package"
+        stow -D $package
+        stow $package
+    else
+        echo "coudln't stow $package: config folder is missing"
+    fi
+done
+unset stowdirs

@@ -1,0 +1,15 @@
+# Files
+alias ls='eza --long --all'
+
+# Programming languages
+alias py='python3'
+
+# Text edit
+alias vim='nvim'
+alias v='vim'
+
+# Fetch
+alias f='fastfetch'
+
+# WSL related
+alias exp='explorer.exe .'

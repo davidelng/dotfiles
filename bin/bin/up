@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+if [ -x "$(command -v apt)" ];
+then
+    sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoremove -y
+elif [ -x "$(command -v dnf)" ];
+then
+    sudo dnf upgrade -y && sudo dnf autoremove -y
+elif [ -x "$(command -v zypper)" ];
+then
+    sudo zypper ref && sudo zypper dup -y
+elif [ -x "$(command -v pacman)" ];
+then
+    sudo pacman -Syu
+else
+    echo "Package manager not found";
+fi
