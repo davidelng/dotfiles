@@ -762,19 +762,30 @@ require("lazy").setup({
 		-- change the command in the config to whatever the name of that colorscheme is.
 		--
 		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-		"kepano/flexoki-neovim",
+		-- "folke/tokyonight.nvim",
+		-- "kepano/flexoki-neovim",
+		'scottmckendry/cyberdream.nvim',
 		lazy = false, -- make sure we load this during startup if it is your main colorscheme
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
+			require('cyberdream').setup {
+				transparet = true,
+				italic_comments = false,
+				hide_fillchars = true,
+				borderless_telescope = true,
+				terminal_colors = true,
+			}
 			-- Load the colorscheme here
-			vim.cmd.colorscheme("flexoki-dark")
+			-- vim.cmd.colorscheme("flexoki-dark")
+			vim.cmd.colorscheme("cyberdream")
 
 			-- You can configure highlights by doing something like
 			vim.cmd.hi("Comment gui=none")
-			vim.cmd.hi("WinSeparator guifg=#282726 guibg=#100f0f")
-			vim.cmd.hi("StatusLine guibg=#1c1b1a")
-			vim.cmd.hi("StatusLineNC guibg=#1c1b1a guifg=#878580")
-			vim.cmd.hi("MsgArea guibg=#100f0f")
+			-- Flexoki colors
+			-- vim.cmd.hi("WinSeparator guifg=#282726 guibg=#100f0f")
+			-- vim.cmd.hi("StatusLine guibg=#1c1b1a")
+			-- vim.cmd.hi("StatusLineNC guibg=#1c1b1a guifg=#878580")
+			-- vim.cmd.hi("MsgArea guibg=#100f0f")
 		end,
 	},
 

@@ -13,7 +13,7 @@ I manage my dotfiles with [Stow](https://www.gnu.org/software/stow/) so I can ke
 
 ## Color scheme
 
-I use [Flexoki](https://stephango.com/flexoki) most of the time.
+I use [Flexoki](https://stephango.com/flexoki) most of the time, but I'll switch to [Cyberdream](https://github.com/scottmckendry/cyberdream.nvim) sometimes.
 
 ## New setup reminder
 
