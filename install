@@ -12,7 +12,7 @@ for package in "${stowdirs[@]}"; do
         stow -D $package
         stow $package
     else
-        echo "coudln't stow $package: config folder is missing"
+        echo "couldn't stow $package: config folder is missing"
     fi
 done
 unset stowdirs
