@@ -17,7 +17,7 @@ I use [Flexoki](https://stephango.com/flexoki) most of the time, but I'll switch
 
 ## New setup reminder
 
-- clone and un `./install` inside this repo to install the configs. 
+- clone and run `./install` inside this repo to install the configs. 
 - git config --global user.name/user.email/init.defaultBranch
 - install stow and clone this repo
 - chsh to set ZSH as default

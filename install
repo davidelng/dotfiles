@@ -5,7 +5,7 @@ if ! command -v stow >/dev/null 2>&1; then
     exit
 fi
 
-declare -a stowdirs=("sh" "nvim" "tmux")
+declare -a stowdirs=("sh" "nvim" "tmux" "bin")
 for package in "${stowdirs[@]}"; do
     if [ -d $package ]; then
         echo "stow $package"
