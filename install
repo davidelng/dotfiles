@@ -5,7 +5,12 @@ if ! command -v stow >/dev/null 2>&1; then
     exit
 fi
 
-declare -a stowdirs=("sh" "nvim" "tmux" "bin")
+declare -a stowdirs=(
+    "sh" "bin" "tmux" "nvim"
+    "kitty" "picom" "i3" "i3status"
+    "background"
+)
+
 for package in "${stowdirs[@]}"; do
     if [ -d $package ]; then
         echo "stow $package"
@@ -15,4 +20,5 @@ for package in "${stowdirs[@]}"; do
         echo "couldn't stow $package: config folder is missing"
     fi
 done
+
 unset stowdirs

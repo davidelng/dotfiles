@@ -50,3 +50,11 @@ I use [Flexoki](https://stephango.com/flexoki) most of the time, but I'll switch
 - docker
 - kubernetes
 - [aws](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and sam/sls
+
+### Tiling wm
+
+- i3/i3status
+- kitty
+- picom
+- feh
+- rofi
