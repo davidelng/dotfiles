@@ -11,5 +11,8 @@ alias v='vim'
 # Fetch
 alias f='fastfetch'
 
+# Docker
+alias lzd='lazydocker'
+
 # WSL related
 alias exp='explorer.exe .'

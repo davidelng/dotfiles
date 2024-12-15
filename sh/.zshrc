@@ -51,6 +51,10 @@ if [ -d "$HOME/.local/bin" ]; then
     path+=$HOME/.local/bin
 fi
 
+if [ -d "$HOME/go/bin" ]; then
+    path+=$HOME/go/bin
+fi
+
 # FZF
 if command -v fzf >/dev/null 2>&1; then
     eval "$(fzf --zsh)"
