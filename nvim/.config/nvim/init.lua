@@ -85,6 +85,7 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+vim.diagnostic.config({ virtual_text = true })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -539,17 +540,15 @@ require("lazy").setup({
 			--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 			local servers = {
 				clangd = {},
-				-- gopls = {},
-				-- pyright = {},
+				gopls = {},
+				pyright = {},
 				-- rust_analyzer = {},
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
 				-- Some languages (like typescript) have entire language plugins that can be useful:
 				--    https://github.com/pmizio/typescript-tools.nvim
-				--
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
-				-- ts_ls = {},
-				--
+				ts_ls = {},
 
 				lua_ls = {
 					-- cmd = {...},
@@ -782,10 +781,10 @@ require("lazy").setup({
 			-- You can configure highlights by doing something like
 			vim.cmd.hi("Comment gui=none")
 			-- Flexoki colors
-			vim.cmd.hi("WinSeparator guifg=#282726 guibg=#100f0f")
-			vim.cmd.hi("StatusLine guibg=#1c1b1a")
-			vim.cmd.hi("StatusLineNC guibg=#1c1b1a guifg=#878580")
-			vim.cmd.hi("MsgArea guibg=#100f0f")
+			-- vim.cmd.hi("WinSeparator guifg=#282726 guibg=#100f0f")
+			-- vim.cmd.hi("StatusLine guibg=#1c1b1a")
+			-- vim.cmd.hi("StatusLineNC guibg=#1c1b1a guifg=#878580")
+			-- vim.cmd.hi("MsgArea guibg=#100f0f")
 		end,
 	},
 
