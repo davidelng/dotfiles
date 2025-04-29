@@ -4,8 +4,8 @@ font-size = 16
 
 theme = flexoki-dark
 
-# shell-integration-features = no-cursor
-# cursor-style = block
-# cursor-style-blink = true
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = true
 # cursor-opacity = 0.8
 
