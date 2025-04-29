@@ -25,12 +25,14 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 precmd () { vcs_info }
-zstyle ':vcs_info:git*' formats ' %s(%F{magenta}%b%f)'
+# zstyle ':vcs_info:git*' formats ' %s(%F{magenta}%b%f)'
+zstyle ':vcs_info:git*' formats ' on %F{magenta}%b%f'
 
 # Fancy prompt
 autoload -U colors && colors
 setopt prompt_subst
-PS1='%F{yellow}%n@%m%f %F{cyan}%~%f${vcs_info_msg_0_} -> '
+# PS1='%F{yellow}%n@%m%f %F{cyan}%~%f${vcs_info_msg_0_} -> '
+PROMPT='%F{cyan}%~%f${vcs_info_msg_0_} %F{yellow}%f '
 
 # Autosuggestions
 if [ -f $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
