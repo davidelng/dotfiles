@@ -18,6 +18,9 @@ compinit
 # Aliases
 source $HOME/.alias
 
+# EDITOR
+export EDITOR=/usr/bin/nvim
+
 # Ignorecase completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
@@ -57,15 +60,25 @@ if [ -d "$HOME/go/bin" ]; then
     path+=$HOME/go/bin
 fi
 
+if [ -d "/usr/local/go" ]; then
+    path+=/usr/local/go
+fi
+
+if [ -d "/usr/local/go/bin" ]; then
+    path+=/usr/local/go/bin
+fi
+
 # FZF
 if command -v fzf >/dev/null 2>&1; then
     eval "$(fzf --zsh)"
 fi
 
-# Golang
-if [ -d "/usr/local/go/bin" ]; then
-    path+=/usr/local/go/bin
-fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Zoxide
+eval "$(zoxide init --cmd cd zsh)"
+
+# Oh My Posh
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.omp.toml)"
