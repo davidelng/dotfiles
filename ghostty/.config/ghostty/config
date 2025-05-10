@@ -9,3 +9,4 @@ cursor-style = block
 cursor-style-blink = true
 # cursor-opacity = 0.8
 
+macos-option-as-alt = true

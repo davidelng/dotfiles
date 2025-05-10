@@ -8,7 +8,7 @@ fi
 declare -a stowdirs=(
     "sh" "bin" "tmux" "nvim"
     "kitty" "picom" "i3" "i3status"
-    "background"
+    "background" "ghostty" "ohmyposh"
 )
 
 for package in "${stowdirs[@]}"; do
