@@ -4,6 +4,8 @@ My personal settings for common Linux tools.
 
 I manage my dotfiles with [Stow](https://www.gnu.org/software/stow/) so I can keep everything tidy and spin up new Linux machines really fast.
 
+Reminder: just use Brew if on MacOS
+
 ## What's included
 
 - ZSH and Bash with some aliases
@@ -13,7 +15,7 @@ I manage my dotfiles with [Stow](https://www.gnu.org/software/stow/) so I can ke
 
 ## Color scheme
 
-I use [Flexoki](https://stephango.com/flexoki) most of the time, but I'll switch to [Cyberdream](https://github.com/scottmckendry/cyberdream.nvim) sometimes.
+I use [Flexoki](https://stephango.com/flexoki)
 
 ## New setup reminder
 
@@ -22,9 +24,8 @@ I use [Flexoki](https://stephango.com/flexoki) most of the time, but I'll switch
 - install stow and clone this repo
 - chsh to set ZSH as default
 - clone [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) and [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) inside ~/.zsh
-- Download a [Nerdfont](https://www.nerdfonts.com/font-downloads) (Cascadia, JetBrains or Fira)
+- Download a [Nerdfont](https://www.nerdfonts.com/font-downloads) (most likely JetBrains Mono)
 - Check ssh keys and config
-- Maybe write a script that does everything for you?
 
 ### Software to install
 
@@ -42,19 +43,15 @@ I use [Flexoki](https://stephango.com/flexoki) most of the time, but I'll switch
 - [nvm](https://github.com/nvm-sh/nvm)
 - [jq](https://jqlang.github.io/jq/)
 - [bat](https://github.com/sharkdp/bat)
-- htop
+- [git-delta](https://github.com/dandavison/delta)
+- [fzf-git](https://github.com/junegunn/fzf-git.sh)
+- htop/btop
+- lzg/lzd
 - make
 - gcc
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - [gh](https://github.com/cli/cli#installation)
-- docker
-- kubernetes
+- docker and docker stuff
+- kubernetes stuff
 - [aws](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and sam/sls
 
-### Tiling wm
-
-- i3/i3status
-- kitty
-- picom
-- feh
-- rofi

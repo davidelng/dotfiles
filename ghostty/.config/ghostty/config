@@ -3,10 +3,13 @@ font-family = JetBrainsMono NFM Regular
 font-size = 16
 
 theme = flexoki-dark
+# theme = GruvboxDarkHard
+# theme = SeaShells
 
 shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = true
 # cursor-opacity = 0.8
 
-macos-option-as-alt = true
+# macos-option-as-alt = true
+# macos-titlebar-style = tabs

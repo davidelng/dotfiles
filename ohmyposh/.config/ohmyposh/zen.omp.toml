@@ -29,7 +29,8 @@ final_space = true
       style = 'full'
 
   [[blocks.segments]]
-    template = ' on <magenta>{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }}</>'
+    # template = ' on <magenta>{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }}</>'
+    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }}'
     foreground = 'white'
     background = 'transparent'
     type = 'git'
@@ -44,10 +45,11 @@ final_space = true
 [[blocks]]
   type = 'prompt'
   alignment = 'left'
+  newline = true
 
   [[blocks.segments]]
     # template = ' ❯'
-    template = ' '
+    template = ''
     background = 'transparent'
     type = 'text'
     style = 'plain'
