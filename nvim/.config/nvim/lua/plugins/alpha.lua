@@ -42,5 +42,12 @@ return {
 
 		-- Disable folding on alpha buffer
 		vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
+
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = "alpha",
+			callback = function()
+				vim.api.nvim_buf_set_keymap(0, "n", "i", "<cmd>ene<CR>", { noremap = true, silent = true })
+			end,
+		})
 	end,
 }
