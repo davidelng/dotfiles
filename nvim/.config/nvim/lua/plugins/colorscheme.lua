@@ -33,5 +33,7 @@ return {
 		vim.api.nvim_set_hl(0, "TabLine", { bg = "#1d2021", fg = "#a89984" })
 		vim.api.nvim_set_hl(0, "TabLineSel", { bg = "#1d2021" })
 		vim.api.nvim_set_hl(0, "TabLineFill", { bg = "#1d2021" })
+		vim.api.nvim_set_hl(0, "Pmenu", { bg = "#282828", fg = "#ebdbb2" })
+		vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#282828", fg = "#fe8019" })
 	end,
 }
