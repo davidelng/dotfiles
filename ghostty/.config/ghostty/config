@@ -2,8 +2,8 @@ window-inherit-font-size = false
 font-family = JetBrainsMono NFM Regular
 font-size = 16
 
-theme = flexoki-dark
-# theme = GruvboxDarkHard
+# theme = flexoki-dark
+theme = Gruvbox Dark Hard
 # theme = SeaShells
 
 shell-integration-features = no-cursor
