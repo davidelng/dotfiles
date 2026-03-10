@@ -8,6 +8,9 @@ vim.g.maplocalleader = " "
 -- Enable Nerd Font
 vim.g.have_nerd_font = true
 
+-- Enable truecolor
+vim.opt.termguicolors = true
+
 -- [[ Settings ]]
 -- See :help option-list
 -- See :help vim.opt
@@ -66,5 +69,5 @@ vim.opt.splitbelow = true
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars = { tab = "- ", trail = "·", nbsp = "␣" }
