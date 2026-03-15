@@ -1,6 +1,6 @@
 # Dotfiles
 
-My personal settings for common Linux tools.
+My personal settings for common Linux tools, some config applies to MacOS and Windows.
 
 I manage my dotfiles with [Stow](https://www.gnu.org/software/stow/) so I can keep everything tidy and spin up new Linux machines really fast.
 
@@ -15,7 +15,8 @@ Reminder: just use Brew if on MacOS
 
 ## Color scheme
 
-I use [Flexoki](https://stephango.com/flexoki)
+~I use [Flexoki](https://stephango.com/flexoki)~
+I moved from Flexoki to a custom Gruvbox, and then from Gruvbox to a custom Zenwritten
 
 ## New setup reminder
 
@@ -54,4 +55,5 @@ I use [Flexoki](https://stephango.com/flexoki)
 - docker and docker stuff
 - kubernetes stuff
 - [aws](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and sam/sls
+- opencode
 

@@ -108,3 +108,7 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # TERM
 # export TERM=xterm-256color
+
+# Config dir
+export XDG_CONFIG_HOME="$HOME/.config"
+

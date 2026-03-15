@@ -5,14 +5,27 @@ alias ls='eza --long --all'
 alias py='python3'
 
 # Text edit
-alias vim='nvim'
-alias v='vim'
+alias v='nvim'
+alias e='emacs'
 
 # Fetch
 alias f='fastfetch'
 
-# Docker
+# Lazy
 alias lzd='lazydocker'
+alias lzg='lazygit'
 
 # WSL related
 alias exp='explorer.exe .'
+
+# Package manager
+alias up='brew update && brew upgrade'
+
+# Shortcuts
+alias c='clear'
+
+# Opencode
+alias oc='opencode'
+
+# Terraform
+alias tf='terraform'
